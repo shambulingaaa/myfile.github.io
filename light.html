@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 5vh;
+        padding: 10%;
+        overflow: hidden;
+    }
+    .st{
+        white-space: nowrap;
+        animation: scrollT 10s linear infinite;
+    }
+    .bt{
+        animation: blinkT 3s alternate infinite;
+    }
+    @keyframes scrollT{
+        0%{
+            transform: translateX(100%);
+        }
+        100%{
+            transform: translateX(-100%);
+        }
+    }
+    @keyframes blinkT{
+        0%,100%{
+            opacity: 1;
+        }
+        50%{
+            opacity: 0;
+        }
+    }
+</style>
+<body style="background-color: black;">
+    <div class="st"><h2 style="color: red;">SUIIIII....</h2></div>
+    <div class="bt"><h2 style="color: aqua;">007</h2></div>
+</body>
+</html>
